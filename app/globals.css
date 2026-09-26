@@ -1979,8 +1979,29 @@ svg.art__layer { overflow: visible; }
 /* ---- course: mobile --------------------------------------------------------- */
 @media (max-width: 699px) {
   .continue { padding: 32px 20px; }
-  .continue__title { font-size: 24px; }
+  .continue .blog-section__head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    row-gap: 8px;
+  }
+  .continue__title {
+    min-width: 0;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .continue__history {
+    justify-self: end;
+    max-width: none;
+    padding-top: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: right;
+  }
+  .continue__grid { margin-top: 24px; }
   .continue-card__title { font-size: 20px; }
+  .continue-card__media { border-radius: 12px; }
+  .continue-card__title { line-height: 1.35; }
 
   .cat-section { padding: 32px 20px 0; }
   .cat-card__title { font-size: 22px; }
