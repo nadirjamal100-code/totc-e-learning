@@ -1,4 +1,5 @@
 import { success } from "@/data/content";
+import AnimatedStatValue from "./AnimatedStatValue";
 import SectionTitle from "./SectionTitle";
 
 export default function StatsSection() {
@@ -14,7 +15,7 @@ export default function StatsSection() {
         {success.stats.map((stat) => (
           <div key={stat.label} className="stat">
             <dt className="stat__label">{stat.label}</dt>
-            <dd className={`stat__value stat__value--${stat.font}`}>{stat.value}</dd>
+            <AnimatedStatValue value={stat.value} font={stat.font} />
           </div>
         ))}
       </dl>
