@@ -143,17 +143,8 @@ button, input { font: inherit; }
 }
 
 .skip-link {
-  position: absolute;
-  left: 12px;
-  top: -80px;
-  z-index: 100;
-  padding: 10px 18px;
-  border-radius: 10px;
-  background: #fff;
-  color: var(--c-navy);
-  font-weight: 600;
+  display: none;
 }
-.skip-link:focus { top: 12px; }
 
 :focus-visible {
   outline: 3px solid var(--c-sky);
@@ -1269,7 +1260,6 @@ svg.art__layer { overflow: visible; }
   .feature-list__icon { width: 44px; }
 
   .courses__inner { padding: 64px 0 32px 20px; }
-  .shelf__head { padding-right: 20px; }
   .shelf__art { min-width: 880px; }
 
   .testimonial { row-gap: 40px; --fs-t: 17px; }
@@ -1765,6 +1755,21 @@ svg.art__layer { overflow: visible; }
 
   .marketing { padding: 40px 20px 56px; }
   .marketing__grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .article-section .blog-section__head--marketing {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) max-content;
+    align-items: start;
+    column-gap: 12px;
+  }
+  .article-section .blog-section__title {
+    min-width: 0;
+    font-size: 22px;
+    line-height: 1.35;
+  }
+  .article-section .blog-section__all {
+    padding-top: 3px;
+    white-space: nowrap;
+  }
   .article-card__title { font-size: 20px; }
 }
 
@@ -2009,7 +2014,7 @@ svg.art__layer { overflow: visible; }
 
   .article-section { padding: 32px 20px 0; }
 
-  .cta-banner { padding: 28px 20px; border-radius: 18px; }
+  .cta-banner { width: calc(100% - 30px); margin-inline: auto; padding: 28px 20px; border-radius: 18px; }
   .cta-banner__title { font-size: 22px; }
   .cta-banner .btn { width: 100%; max-width: 300px; }
   .article-section:last-of-type { padding-bottom: 56px; }
