@@ -991,6 +991,7 @@ svg.art__layer { overflow: visible; }
 .footer__links li + li { border-left: 1px solid rgba(178, 179, 207, 0.5); }
 .footer__links a:hover { color: #fff; }
 .footer__copy { margin-top: calc(20 * var(--px)); font-size: var(--fs-body-l); line-height: 1.5; letter-spacing: 0.04em; }
+.footer__credit { margin-top: calc(8 * var(--px)); font-size: var(--fs-small); line-height: 1.5; letter-spacing: 0.04em; color: var(--c-muted); }
 
 /* ==========================================================================
    Tablet  (<= 1099px)

@@ -46,6 +46,7 @@ export default function Footer() {
         </ul>
 
         <p className="footer__copy">{footer.copyright}</p>
+        <p className="footer__credit">Website Developed By NADIR JAMAL</p>
       </div>
     </footer>
   );
