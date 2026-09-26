@@ -22,7 +22,7 @@ export const continueLearning = {
       alt: "Laptop showing a video class next to a cup of coffee",
       author: "Lina",
       lesson: "Lesson 5 of 7",
-      progress: 0.77,
+      progress: 5 / 7,
     },
     {
       slug: "aws-certified-solutions-architect",
@@ -31,7 +31,7 @@ export const continueLearning = {
       alt: "Person taking notes while working on a laptop",
       author: "Lina",
       lesson: "Lesson 5 of 7",
-      progress: 0.77,
+      progress: 5 / 7,
     },
     {
       slug: "aws-certified-solutions-architect",
@@ -40,7 +40,7 @@ export const continueLearning = {
       alt: "Hands typing on a laptop that shows source code",
       author: "Lina",
       lesson: "Lesson 5 of 7",
-      progress: 0.77,
+      progress: 5 / 7,
     },
     {
       slug: "aws-certified-solutions-architect",
@@ -49,7 +49,7 @@ export const continueLearning = {
       alt: "Two teachers and a cat shown during a video call",
       author: "Lina",
       lesson: "Lesson 5 of 7",
-      progress: 0.77,
+      progress: 5 / 7,
     },
   ] satisfies ContinueCard[],
 };

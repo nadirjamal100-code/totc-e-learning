@@ -1860,7 +1860,15 @@ svg.art__layer { overflow: visible; }
   border-radius: calc(2 * var(--px));
   background: #d9d9d9;
 }
-.continue-card__bar { display: block; height: 100%; min-width: calc(8 * var(--px)); border-radius: calc(2 * var(--px)); background: var(--c-teal); }
+.continue-card__bar {
+  display: block;
+  width: var(--fill-width);
+  height: 100%;
+  min-width: calc(8 * var(--px));
+  border-radius: calc(2 * var(--px));
+  background: var(--c-teal);
+  animation: progress-fill 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
 .continue-card__lesson {
   margin-top: calc(12 * var(--px));
   text-align: right;
@@ -2115,7 +2123,20 @@ svg.art__layer { overflow: visible; }
 .rating-row { display: flex; align-items: center; gap: calc(24 * var(--px)); }
 .rating-row__label { flex: none; width: calc(90 * var(--px)); font-size: calc(20 * var(--px)); color: rgba(0, 0, 0, 0.5); }
 .rating-row__track { flex: 1; height: calc(8 * var(--px)); border-radius: calc(2 * var(--px)); background: #d9d9d9; }
-.rating-row__bar { display: block; height: 100%; min-width: calc(8 * var(--px)); border-radius: calc(2 * var(--px)); background: var(--c-teal); }
+.rating-row__bar {
+  display: block;
+  width: var(--fill-width);
+  height: 100%;
+  min-width: calc(8 * var(--px));
+  border-radius: calc(2 * var(--px));
+  background: var(--c-teal);
+  animation: progress-fill 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--rating-order, 0) * 100ms);
+}
+@keyframes progress-fill {
+  from { width: 0; }
+  to { width: var(--fill-width); }
+}
 
 .review-list { margin-top: calc(50 * var(--px)); display: flex; flex-direction: column; gap: calc(33 * var(--px)); }
 .review { padding-top: calc(33 * var(--px)); border-top: 1px solid rgba(0, 0, 0, 0.1); }

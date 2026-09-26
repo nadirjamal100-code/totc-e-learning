@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { rating } from "@/data/courseDetail";
 import { Star } from "../icons";
 
@@ -14,7 +15,7 @@ export default function RatingCard() {
         <p className="rating-card__label">{rating.label}</p>
       </div>
       <ul className="rating-card__breakdown">
-        {rating.breakdown.map((row) => (
+        {rating.breakdown.map((row, index) => (
           <li key={row.label} className="rating-row">
             <span className="rating-row__label">{row.label}</span>
             <span
@@ -25,7 +26,13 @@ export default function RatingCard() {
               aria-valuemax={100}
               aria-label={row.label}
             >
-              <span className="rating-row__bar" style={{ width: `${row.percent}%` }} />
+              <span
+                className="rating-row__bar"
+                style={{
+                  "--fill-width": `${row.percent}%`,
+                  "--rating-order": index,
+                } as CSSProperties}
+              />
             </span>
           </li>
         ))}

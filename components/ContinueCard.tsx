@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { ContinueCard as ContinueCardData } from "@/data/course";
@@ -28,7 +29,10 @@ export default function ContinueCard({ card }: { card: ContinueCardData }) {
         aria-valuemax={100}
         aria-label={`Progress in ${card.title}`}
       >
-        <span className="continue-card__bar" style={{ width: `${card.progress * 100}%` }} />
+        <span
+          className="continue-card__bar"
+          style={{ "--fill-width": `${card.progress * 100}%` } as CSSProperties}
+        />
       </div>
       <p className="continue-card__lesson">{card.lesson}</p>
     </Link>
