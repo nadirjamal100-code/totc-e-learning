@@ -1,0 +1,3 @@
+import type { ArtworkData } from "@/lib/artwork";
+
+export const playButton: ArtworkData = {"w":80,"h":80,"layers":[{"t":"box","s":{"left":"0","top":"0","width":"100%","height":"100%","background":"#ffffff","borderRadius":"50%","boxShadow":"2.5cqw 25cqw 75cqw 0 rgba(61,155,185,0.1)"},"c":[]},{"t":"svg","s":{"left":"70%","top":"30%","width":"41.6667%","height":"40%","transform":"matrix(-0,1,-1,-0,0,0)","transformOrigin":"0 0","overflow":"visible"},"vb":[33.333,32],"p":[{"d":"M15.81 1.42C16.2 0.78 17.14 0.78 17.52 1.42L30.19 22.48C30.59 23.15 30.11 24 29.33 24L4 24C3.22 24 2.74 23.15 3.14 22.48L15.81 1.42Z","f":"#23bdee"}]}]};

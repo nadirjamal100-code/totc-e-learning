@@ -1,0 +1,3 @@
+import type { ArtworkData } from "@/lib/artwork";
+
+export const iconGrid: ArtworkData = {"w":21,"h":21,"layers":[{"t":"box","s":{"left":"0","top":"0","width":"47.619%","height":"47.619%","borderRadius":"9.5238cqw","border":"4.7619cqw solid #d9d9d9"},"c":[]},{"t":"box","s":{"left":"0","top":"52.381%","width":"47.619%","height":"47.619%","borderRadius":"9.5238cqw","border":"4.7619cqw solid #d9d9d9"},"c":[]},{"t":"box","s":{"left":"52.381%","top":"52.381%","width":"47.619%","height":"47.619%","borderRadius":"9.5238cqw","border":"4.7619cqw solid #d9d9d9"},"c":[]},{"t":"box","s":{"left":"52.381%","top":"0","width":"47.619%","height":"47.619%","borderRadius":"9.5238cqw","border":"4.7619cqw solid #d9d9d9"},"c":[]}]};

@@ -1,0 +1,3 @@
+import type { ArtworkData } from "@/lib/artwork";
+
+export const arrowLine: ArtworkData = {"w":80,"h":80,"layers":[{"t":"box","s":{"left":"0","top":"0","width":"100%","height":"100%","borderRadius":"50%","border":"1.25cqw solid #49bbbd"},"c":[]},{"t":"svg","s":{"left":"33.75%","top":"50%","width":"31.25%","height":"1.25%","overflow":"visible"},"vb":[25,1],"p":[{"d":"M25.71 0.71C26.1 0.32 26.1 -0.32 25.71 -0.71L19.34 -7.07C18.95 -7.46 18.32 -7.46 17.93 -7.07C17.54 -6.68 17.54 -6.05 17.93 -5.66L23.59 0L17.93 5.66C17.54 6.05 17.54 6.68 17.93 7.07C18.32 7.46 18.95 7.46 19.34 7.07L25.71 0.71ZM0 1L25 1L25 -1L0 -1L0 1Z","f":"#49bbbd"}]}]};
