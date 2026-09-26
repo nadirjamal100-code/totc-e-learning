@@ -59,7 +59,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className={`${poppins.variable} ${nunito.variable} ${roboto.variable} ${display.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <img
+          className="site-bubbles"
+          src="/rising-bubbles.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </body>
     </html>
   );
 }
