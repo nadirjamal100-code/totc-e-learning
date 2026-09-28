@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 export default function AnimatedStatValue({ value, font }: { value: string; font: string }) {
-  const elementRef = useRef<HTMLElement>(null);
+  const elementRef = useRef<HTMLDListElement>(null);
   const [count, setCount] = useState(0);
   const match = value.match(/^(\d+(?:\.\d+)?)(.*)$/);
 
@@ -54,10 +54,11 @@ export default function AnimatedStatValue({ value, font }: { value: string; font
 
   if (!match) return <dd className={`stat__value stat__value--${font}`}>{value}</dd>;
 
-  const [, , suffix] = match;
+  const [, numberText, suffix] = match;
+  const target = Number(numberText);
   return (
     <dd ref={elementRef} className={`stat__value stat__value--${font}`} aria-label={value}>
-      {count}{suffix}
+      {count >= target ? numberText : count}{suffix}
     </dd>
   );
 }
